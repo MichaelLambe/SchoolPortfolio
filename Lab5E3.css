@@ -1,0 +1,17 @@
+.pop {
+    color: darksalmon;
+    text-align: center;
+    padding: 1.5em;
+    margin: auto;
+    
+    
+
+}
+.text-pop {
+    color: rgb(192, 18, 114);
+    text-align: center;
+    padding: 6%;
+}
+body {
+    background-color: #7ceedb
+} 
