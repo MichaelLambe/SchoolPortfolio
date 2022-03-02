@@ -4,7 +4,7 @@ class Person:
         self.lname = lname
         self.email = email
 
-    def __str__(self):
+    def fullName(self):
         return f"{self.fname} {self.lname}"
     
 class Customer(Person):
@@ -53,16 +53,21 @@ def main():
         
         if checkC(object) == True:
             print("CUSTOMER")
-            print(f"Name: {Person.__str__}")
-            print(f"Email: {object.email}")
-            print(f"Number: {object.custNum}")
+            print(f"{'Name:':10} {Person.fullName(object)}")
+            print(f"{'Email:':10} {object.email}")
+            print(f"{'Number:':10} {object.custNum}")
             print()
         else:
             print("EMPLOYEE")
-            print(f"Name: {object.__str__}")
-            print(f"Email: {object.email}")
-            print(f"SSN: {object.ssn}")
+            print(f"{'Name:':10} {Person.fullName(object)}")
+            print(f"{'Email:':10} {object.email}")
+            print(f"{'SSN:':10} {object.ssn}")
             print()
+        again = input("Continue? (y/n): ")
+        print()
+        if again != "y":
+            print("Bye!")
+            break
 
            
 
