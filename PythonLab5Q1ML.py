@@ -47,7 +47,7 @@ def main():
             print()
         elif choice == "s":
             print()
-            l = input(f"{'Enter Length: ':20}")
+            l = input(f"{'Length: ':10} ")
             
             squa = Square(int(l))
             print(f"{'Perimeter:':10} {squa.perimeter()}")
@@ -57,7 +57,6 @@ def main():
         else:
             print("Invalid choice please try again")
             print()
-
         again = input("Continue (y/n): ")
         print()    
         if again != 'y':
