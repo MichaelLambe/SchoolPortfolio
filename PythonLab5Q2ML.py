@@ -21,10 +21,6 @@ class Employee(Person):
 def checkC(cus):
     return isinstance(cus, Customer)
 
-#def checkE(emp):
-    return isinstance(emp, Employee)
-
-
 
 def main():
     print("Customer/Employee Data Entry")
