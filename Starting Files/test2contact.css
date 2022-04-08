@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+
+}
+
+:root {
+    --main--header: rgb(225, 235, 228);
+    --main--background: rgb(169, 202, 207);
+}
+
+header {
+    background-color: var(--main--header);
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    margin: 10px;
+    
+}
+body {
+    background-color: var(--main--background);
+
+}
+h1 {
+    text-align: center;
+}
+form {
+    align-items: center;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    
+}
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: flex-end;
+    font-size: 22px;
+    border-bottom: 4px solid rgb(34, 72, 78); 
+    height: 80px;
+    padding-bottom: 40px;
+    
+
+}

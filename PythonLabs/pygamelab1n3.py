@@ -1,5 +1,5 @@
 
-from rect import *
+from PythonLabs.rect import *
 c = (100, 80, 50, 80)
 v = (100, 50, 60, 80)
 rect1 = Rect(v)

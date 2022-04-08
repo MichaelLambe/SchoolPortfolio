@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: whitesmoke;
+}
+
+h1 {
+    font-size: 5em;
+    text-align: center;
+}
+
+body {
+    font-size: 10px;
+    font-family: sans-serif;
+    margin: 0 auto;
+    width: 90%; 
+}
+
+#employees {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.employee {
+    background-color: rgb(250, 248, 247);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2em;
+    margin: 1em;
+    min-width: 200px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.employee-name {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.employee img {
+    border-radius: 25%;
+    filter: grayscale(100%);
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    width: 70%;
+}
