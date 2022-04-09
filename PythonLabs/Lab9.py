@@ -30,7 +30,7 @@ def history():
     print()
 
 def complete(taskid):
-    sql = '''UPDATE Task SET description = 1 WHERE taskID = ?'''
+    sql = '''UPDATE Task SET completed = 1 WHERE taskID = ?'''
     with closing(conn.cursor()) as c:
         c.execute(sql, taskid)
         conn.commit()
@@ -38,14 +38,13 @@ def complete(taskid):
         print()
 
 
-def add(added:dict):
-    sql = '''INSERT INTO Task (taskID, description, completed)
-                VALUES (?, ?, ?)'''
+def add(desc):
+    sql = '''INSERT INTO Task (description, completed)
+                VALUES (?, ?)'''
     with closing(conn.cursor()) as c:
-        c.execute(sql, (added['taskID'], added['description'], 
-                        added['completed']))
+        c.execute(sql, (desc, 0))
         conn.commit()
-        print(f"{added['description']} was added.")
+        print(f"{desc} was added.")
     
         
 
